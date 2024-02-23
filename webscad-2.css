@@ -1,0 +1,194 @@
+webscad-2
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.container{background-color: black;
+    color:white;
+    width: 80%;
+    margin: auto;
+}
+nav {display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.logo{
+    font-size: 23px;
+}
+nav ul{display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{color: orangered;
+    cursor: pointer;
+}
+
+
+.forge{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+.main-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-image: url(./adults-enjoying-mexican-food_23-2149663879.jpg);
+    background-position: center;
+    background-size: cover;}
+    .forge h1{
+        font-style: normal;
+        font-size: 30px;
+        text-align: center;
+    }
+    .forge .want{
+        padding-bottom: 20px;
+    }
+    .forge .btn-4{
+        background-color: blue;
+        border-radius: 7px;
+        border: none;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 20px;
+        transition: all .3s ease-in-out;
+    }
+    .forge .btn-4:hover{
+        background-color:red;
+        color:yellow;
+        cursor: pointer;
+
+    }
+    
+    .forge .want{
+        display: flex;
+        gap: 15px;
+        margin: 20px 0;
+    }
+    .fab{
+        font-size: 30px;
+        transition: all .3s ease-in-out;
+
+    }
+    .fab:hover{
+        color: aqua;
+        cursor: pointer;
+    }
+    .profile-img{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background-image: url(./adults-enjoying-mexican-food_23-2149663879.jpg);
+        background-position: center;
+        background-size: cover;
+
+    }
+    .date_profile{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+
+    }
+    .profile_pic{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .qws{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+     .qws .bar-1{
+        background-position: center;
+        background-size: cover;
+        width: 45%;
+        height: 300px;
+        border-radius: 15px;
+    
+    }
+    .works .qws :hover::before{
+        content: 'Made by me john doe';
+        opacity: 1;
+        display:flex;
+        cursor: pointer;
+        width: 22%;
+        height: 300px;
+        position: absolute;
+        align-items: center;
+        font-size: 2rem;
+        justify-content: center;
+    }
+.qws .img-1{
+    background-image: url(./adults-enjoying-mexican-food_23-2149663879.jpg);
+}
+.qws .img-2{
+background-image: url(./adults-enjoying-mexican-food_23-2149663879.jpg);
+}
+.qws .img-3{
+    background-image:url(./adults-enjoying-mexican-food_23-2149663879.jpg);
+}
+.qws .img-4{
+    background-image: url(./adults-enjoying-mexican-food_23-2149663879.jpg);
+}
+.footer-1{
+    display: flex;
+    gap: 3rem;
+}
+.footer-1 a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+.footer-1 a:hover{text-decoration: underline;
+    color: blue;
+}
+footer hr{
+    margin: 2rem 0;
+    border: 1px solid color(srgb red green blue);
+}
+.footer-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-2 p span{
+    color: gray;
+}
+.footer-2 p{
+     font-size: 1.5rem;
+}
+
+
+
+
+@media ( max-width:390px) {
+    nav{ 
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        padding-left: 0;
+    }
+    .qws{
+        flex-direction: column;
+    }
+    .qws .bar-1{
+        width: 100%;
+    }
+}
